@@ -75,11 +75,11 @@ Hex Code Command to LCD Instruction Register.
 ### Procedure:
 <table>
   <tr>
-    <td width="30%">
+    <td width="50%">
       1. click on STM 32 CUBE IDE, the following screen will appear.
     </td>
-    <td width="70%">
-      <img src="https://user-images.githubusercontent.com/36288975/226189166-ac10578c-c059-40e7-8b80-9f84f64bf088.png">
+    <td>
+      <img height=17% width=90% src="https://user-images.githubusercontent.com/36288975/226189166-ac10578c-c059-40e7-8b80-9f84f64bf088.png">
     </td>
   </tr>
   <tr>
@@ -124,7 +124,6 @@ Hex Code Command to LCD Instruction Register.
     </td>
     <td width="50%">
       <img src="https://user-images.githubusercontent.com/36288975/226189403-f7179f1a-3eae-4637-826b-ab4ec35ba1e1.png">
-<img src="https://user-images.githubusercontent.com/36288975/226189425-2b2414ce-49b3-4b61-a260-c658cb2e4152.png">
     </td>
   </tr>
     <tr>
@@ -133,7 +132,6 @@ Hex Code Command to LCD Instruction Register.
     </td>
     <td width="50%">
 <img src="https://user-images.githubusercontent.com/36288975/226189443-8b43451d-0b14-47e4-a20b-cc09c6ad8458.png">
-<img src="https://user-images.githubusercontent.com/36288975/226189450-85ffa969-2ffb-4788-81e5-72d60fdda0f1.png">  
     </td>
   </tr>
     <tr>
@@ -231,6 +229,14 @@ void key()
 	{
 		Lcd_cursor(&lcd,0,1);
 		Lcd_string(&lcd,"Key-7\n");
+```
+
+<table>
+	<tr>
+		<td width=50%>
+
+   ```Python
+
 		HAL_Delay(500);
 		col1=1;
 	}
@@ -296,6 +302,13 @@ void key()
 	HAL_GPIO_WritePin(GPIOC,GPIO_PIN_0,GPIO_PIN_SET);
 	HAL_GPIO_WritePin(GPIOC,GPIO_PIN_1,GPIO_PIN_SET);
 	HAL_GPIO_WritePin(GPIOC,GPIO_PIN_2,GPIO_PIN_RESET);
+```
+
+</td>
+<td width=50%>
+
+ 
+```Python
 	HAL_GPIO_WritePin(GPIOC,GPIO_PIN_3,GPIO_PIN_SET);
 	col1=HAL_GPIO_ReadPin(GPIOC,GPIO_PIN_4);
 	col2=HAL_GPIO_ReadPin(GPIOC,GPIO_PIN_5);
@@ -360,6 +373,14 @@ void key()
 		col3=1;
 	}
 	else if(!col4)
+```
+</td>
+</tr>
+
+</table>
+
+```Python
+	
 	{
 		Lcd_cursor(&lcd,0,1);
 		Lcd_string(&lcd,"Key-+\n");
