@@ -79,7 +79,7 @@ Hex Code Command to LCD Instruction Register.
       1. click on STM 32 CUBE IDE, the following screen will appear.
     </td>
     <td>
-      <img height=17% width=90% src="https://user-images.githubusercontent.com/36288975/226189166-ac10578c-c059-40e7-8b80-9f84f64bf088.png">
+      <img height=10% width=70% src="https://user-images.githubusercontent.com/36288975/226189166-ac10578c-c059-40e7-8b80-9f84f64bf088.png">
     </td>
   </tr>
   <tr>
@@ -87,8 +87,7 @@ Hex Code Command to LCD Instruction Register.
       2. click on FILE, click on new stm 32 project.
     </td>
     <td width="50%">
-  <img src="https://user-images.githubusercontent.com/36288975/226189215-2d13ebfb-507f-44fc-b772-02232e97c0e3.png">
-    <img src="https://user-images.githubusercontent.com/36288975/226189230-bf2d90dd-9695-4aaf-b2a6-6d66454e81fc.png">
+  <img height=10% width=70% src="https://user-images.githubusercontent.com/36288975/226189215-2d13ebfb-507f-44fc-b772-02232e97c0e3.png">
     </td>
   </tr>
   <tr>
@@ -142,14 +141,6 @@ Hex Code Command to LCD Instruction Register.
       <img src="https://user-images.githubusercontent.com/36288975/226189461-a573e62f-a109-4631-a250-a20925758fe0.png">
     </td>
   </tr>
-    <tr>
-    <td width="50%">
-      8. edit the program and as per required.
-    </td>
-    <td width="50%">
-      <img src="https://user-images.githubusercontent.com/36288975/226189461-a573e62f-a109-4631-a250-a20925758fe0.png">
-    </td>
-  </tr>  
   <tr>
     <td width="50%">
       9. Add necessary library files of LCD 16x2 , write the program and use project and build.
@@ -189,28 +180,20 @@ Hex Code Command to LCD Instruction Register.
   </tr>  
   <tr>
     <td width="50%">
-      15. Double click on the the MCU part to open settings. Next to the Program File option, give full path to the Hex file generated using STM32Cube IDE. Then set the external crystal frequency to 8M (i.e. 8 MHz). Click OK to save the changes.
-https://engineeringxpert.com/wp-content/uploads/2022/04/26.png
-
+      15. Double click on the the MCU part to open settings. Next to the Program File option, give full path to the Hex file generated using STM32Cube IDE. Then set the external crystal frequency to 8M (i.e. 8 MHz). Click OK to save the changes.https://engineeringxpert.com/wp-content/uploads/2022/04/26.png
 16. click on debug and simulate using simulation as shown below 
-
-
-    </td>
+ </td>
     <td width="50%">
-      <img src="https://user-images.githubusercontent.com/36288975/233856904-99eb708a-c907-4595-9025-c9dbd89b8879.png">
+      <img height=7% width=80% src="https://user-images.githubusercontent.com/36288975/233856904-99eb708a-c907-4595-9025-c9dbd89b8879.png">
     </td>
   </tr>  
   
 </table>
 
-```
-Developed By: ROHIT JAIN D
-Register No; 212222230120
-```
 ### STM 32 CUBE PROGRAM :
 ```Python
-#include "lcd.h"
-#include "stdbool.h"
+#include "lcd.h"										Developed By: ROHIT JAIN D
+#include "stdbool.h"										Register No: 212222230120
 void key()
 {
 	Lcd_PortType ports[]={GPIOA,GPIOA,GPIOA,GPIOA};
@@ -396,6 +379,7 @@ void key()
 }
 ```
 ### CIRCUIT DIAGRAM : 
- ![Screenshot 2023-09-20 144302](https://github.com/ROHITJAIND/EX-05-INTERFACING-A-4X4-MATRIX-KEYPAD-AND-DISPLAY-THE-OUTPUT-ON-LCD/assets/118707073/eab03fab-500d-43f5-9c8f-28161e907909)
+ <img height=40% width=80% src="https://github.com/ROHITJAIND/EX-05-INTERFACING-A-4X4-MATRIX-KEYPAD-AND-DISPLAY-THE-OUTPUT-ON-LCD/assets/118707073/eab03fab-500d-43f5-9c8f-28161e907909">
+ 
 ### Result :
 Interfacing a 4x4 keypad with ARM microcontroller are simulated in proteus and the results are verified.
